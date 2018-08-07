@@ -12,7 +12,7 @@ Applied the code in a youtube tutorial
 [Creating a web-application in Python [PART 4]](https://www.youtube.com/watch?v=2SPjxL-66AM)
 
 
-##### 1- Create __main__.py (command: touch __main__.py)
-to run the app from in by python IDLE
+#### 1- Create __main__.py (command: touch __main__.py)
+    to run the app from in by python IDLE
 
-##### 2- Create app.py (command: touch app.py)
+#### 2- Create app.py (command: touch app.py)
