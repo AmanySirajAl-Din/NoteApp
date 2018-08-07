@@ -27,7 +27,14 @@ Applied the code in a youtube tutorial
 #### 4- Config python packages
     by adding __init__.py to the files' folders
     (Linx command: touch __init__.py)
-    noteapp folder >> package
-    views folder >> package
-
-     
+    * noteapp folder >> package
+    * views folder >> package
+    
+#### 5- install flask package
+    * install it on current machine
+        (Linx command: pip install flask)
+        (Linx command: python -m pip install --upgrade pip)
+    
+    * can also be installed on a virtual machine
+        [Python Virtual Environments](https://realpython.com/python-virtual-environments-a-primer/)
+        
