@@ -50,7 +50,8 @@
 
 #### 9- Add create note form
 
-
-
-
+#### 10- Allow the post method
+    for the submit button of the form
+    in views folder createnote.py file
+    @cn.route('/createnote', methods=['POST', 'GET'])
         
