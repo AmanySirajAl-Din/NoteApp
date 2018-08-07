@@ -1,0 +1,13 @@
+<!-- inhiret layout.html -->
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2> This is The index </h2>
+    <div class="notelist">
+        {% for i in range(0, 10) %}
+            <div class="note">
+                <p>{{i}}- Example note</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

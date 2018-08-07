@@ -40,7 +40,7 @@ Applied the code in a youtube tutorial
 
 #### 6- Add a template with style
     
-    
+#### 7- Create new template using Blueprint package
     
 
         

@@ -1,11 +1,12 @@
 from flask import Flask
-from flask import render_template
-
+from noteapp.views.index import bp as index_bp
 
 app = Flask(__name__)
 
 # creatin a route to go to
 
-@app.route('/')
-def home():
-    return render_template("layout.html")
+#@app.route('/')
+#def home():
+    #return "Hello World"
+
+app.register_blueprint(index_bp)
