@@ -37,4 +37,10 @@ Applied the code in a youtube tutorial
     
     * Can also be installed on a virtual machine
 [Python Virtual Environments](https://realpython.com/python-virtual-environments-a-primer/)
+
+#### 6- Add a template with style
+    
+    
+    
+
         

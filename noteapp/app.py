@@ -1,5 +1,6 @@
 from flask import Flask
-from noteapp.views.index import bp as index_bp
+from flask import render_template
+
 
 app = Flask(__name__)
 
@@ -7,4 +8,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello World"
+    return render_template("layout.html")
