@@ -1,5 +1,4 @@
 # Note web app created with Python
-===================================
 
 Applied the code in a youtube tutorial
 ## Creating a web-application
