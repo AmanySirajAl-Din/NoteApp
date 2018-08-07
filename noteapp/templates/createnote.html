@@ -3,11 +3,11 @@
 
 {% block content %}
     <h2> Create Note </h2>
-    <form method="post" class="noteform">
+    <form method="POST" class="noteform">
         <label for="notetext">
             Note Text
             <textarea name="notetext"></textarea>
         </label>
-        <input type="button" name="createnote" value="save"/>
+        <input type="submit" name="createnote_btn" value="save"/>
     </form>
 {% endblock %}
