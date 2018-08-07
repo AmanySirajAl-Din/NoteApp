@@ -4,8 +4,8 @@
 
 from flask import Blueprint, render_template
 
-bp = Blueprint('bp', __name__, template_folder='templates')
+cn = Blueprint('cn', __name__, template_folder='templates')
 
-@bp.route('/createnote')
+@cn.route('/createnote')
 def show():
     return render_template("createnote.html")
