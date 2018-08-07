@@ -1,7 +1,7 @@
 # Note web app created with Python
 
-Applied the code in a youtube tutorial
 ## Creating a web-application
+    Youtube tutorial
 
 [Creating a web-application in Python [PART 1]](https://www.youtube.com/watch?v=Dqd8ZHWErpE)
 
@@ -41,6 +41,16 @@ Applied the code in a youtube tutorial
 #### 6- Add a template with style
     
 #### 7- Create new template using Blueprint package
-    
+    index.html
+    index.py
+
+#### 8- Create new view (createnote) and add the links
+    createnote.html
+    createnote.py
+
+#### 9- Add create note form
+
+
+
 
         

@@ -3,7 +3,11 @@
 
 {% block content %}
     <h2> Create Note </h2>
-    <div>
-        
-    </div>
+    <form method="post" class="noteform">
+        <label for="notetext">
+            Note Text
+            <textarea name="notetext"></textarea>
+        </label>
+        <input type="text" name="createnote" value="save"/>
+    </form>
 {% endblock %}

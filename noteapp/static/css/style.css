@@ -54,3 +54,13 @@
     margin: 0.5rem;
     
 }
+
+.noteform {
+    width: 50%;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+.noteform textarea{
+    width: 100%;
+    height: 300px;
+}
