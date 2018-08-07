@@ -54,4 +54,6 @@
     for the submit button of the form
     in views folder createnote.py file
     @cn.route('/createnote', methods=['POST', 'GET'])
-        
+    
+#### 10- Handle the POST method
+    
