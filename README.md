@@ -103,7 +103,7 @@
         (or click on 'Machine' dropdown menu then click 'New')
     * Click on **'Expert Mode'** button
     * Choose **'Type'**: Linux
-    * Choose **'Version'**: Linux 
+    * Choose **'Version'**: Debian (64-bit)
     * Increase the **'Memory Size'** to be more than 2600 MB
     * Name your virtual machine
     * Click on **'Create'** button
