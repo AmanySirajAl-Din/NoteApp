@@ -56,4 +56,16 @@
     @cn.route('/createnote', methods=['POST', 'GET'])
     
 #### 10- Handle the POST method
+
+#### 11- Return the note text
+    text =  request.form.get('notetext')
+    return text
     
+#### 12- Create note files
+    with open('noteapp/notes/{}.note'.format(random_string()), 'w+') as _file:
+    # {} will be replaced with the random_string()
+        _file.write(text)
+
+        _file.close()
+        
+        
