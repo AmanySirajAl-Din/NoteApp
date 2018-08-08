@@ -2,7 +2,8 @@
 # flask blue print
 # http://flask.pocoo.org/docs/1.0/blueprints/
 
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, redirect
+
 import random
 
 
