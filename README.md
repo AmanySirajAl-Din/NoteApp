@@ -11,8 +11,8 @@
 
 [Creating a web-application in Python [PART 4]](https://www.youtube.com/watch?v=2SPjxL-66AM)
 
-===================================================================
-
+- - -
+## Part1,2,3: Create Note web app (Using Notes Files)
 ### Programming Steps:
 
 #### 1- Create __main__.py 
@@ -81,9 +81,9 @@
 #### 17- Redirect to the index page after creating a new note
 
         
-=================================================
+- - -
 
-## Part4: Using DataBase
+## Part4: Create Note web app (Using DataBase and VM)
 ### Programming Steps:
 
 #### 1- Setup a virtual environment
@@ -121,6 +121,21 @@
         * partitioning scheme>> 'All files in one partition'
         * Finish
         * Write the changes to disk?>>Yes
+        * Choose Software to install:>>just choose
+            * SSH server
+            * Standard system utilities
+        * Install Grub boot loader>>Yes
+        * Device for boot loader>>/dev/sda
+        * Finish the installation
+    * On the newely created **VM DOS**:
+        * VMname login: **root**
+        * Press Enter
+        * Password: ****
+        * Press Enter
+        * ls
+    * Click **'Machine'** dropdown menu then choose 'Settings'
+    * On the Settings window choose **'Network'** tab then for **'Attached to:'** choose **'Bridged Adapter'** then click **'OK'** button
+    
         
     
     
