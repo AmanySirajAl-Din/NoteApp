@@ -89,11 +89,13 @@
 #### 1- Setup a virtual environment
 * **Debian:**
     **Debian** is the operating system the Linux distribution that will be used in this part
-    * Search for debian
+    * Search for debian netinstall
     * open the link [Debian](https://www.debian.org/CD/netinst/)     
     * Download netinst CD image that compatable with your machine
         ( for me it's amd64 because I have 64-bit)
 * **VirtualBox:**
+    * Search for VirtualBox
+    * open the link [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
     * **Download** the version for your OS
     * **Install** it
     * **Open** it
