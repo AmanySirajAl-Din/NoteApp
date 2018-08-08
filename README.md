@@ -41,7 +41,8 @@ by adding __init__.py to the files' folders
         (command: python -m pip install --upgrade pip)
     
 * Can also be installed on a virtual machine
-[Python Virtual Environments](https://realpython.com/python-virtual-environments-a-primer/)
+
+    [Source: Python Virtual Environments](https://realpython.com/python-virtual-environments-a-primer/)
 
 #### 6- Add a template with style
     
