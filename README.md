@@ -81,5 +81,3 @@ Fetch the notes files to the index.py file
 
 #### 17- Redirect to the index page after creating a new note
 
-     
-    
