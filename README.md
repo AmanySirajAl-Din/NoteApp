@@ -94,24 +94,24 @@
     * Download netinst CD image that compatable with your machine
         ( for me it's amd64 because I have 64-bit)
 * **VirtualBox:**
-    * Download the version for your OS
-    * Install it
-    * Open it
-    * Click on 'New' top button 
+    * **Download** the version for your OS
+    * **Install** it
+    * **Open** it
+    * Click on **'New'** top button 
         (or click on 'Machine' dropdown menu then click 'New')
-    * Click on 'Expert Mode' button
-    * Choose 'Type': Linux
-    * Choose 'Version': Linux 
-    * Increase the 'Memory Size' to be more than 2600 MB
+    * Click on **'Expert Mode'** button
+    * Choose **'Type'**: Linux
+    * Choose **'Version'**: Linux 
+    * Increase the **'Memory Size'** to be more than 2600 MB
     * Name your virtual machine
-    * Click on 'Create' button
-    * Click on 'Create' button on the another pop-up
+    * Click on **'Create'** button
+    * Click on **'Create'** button on the another pop-up
         (Before clicking it .. you can make the 'File Size' 8.00GB as the tutorial)
-    * Click on 'Start' top button to Boot up your newely created VM
+    * Click on **'Start'** top button to Boot up your newely created VM
         (or click on 'Machine' dropdown menu then click 'Start')
-    * On the new Pop-up choose where the 'Debian ISO file'
-    * Click on the 'Start' button
-    * Choose install on thr VM window and follow the steps
+    * On the new Pop-up choose where the **'Debian ISO file'**
+    * Click on the **'Start'** button
+    * Choose **'install'** on thr VM window and follow the steps
         * language settings
         * Hostname
         * Root password
