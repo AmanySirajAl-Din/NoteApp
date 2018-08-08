@@ -16,12 +16,12 @@
 ### Programming Steps:
 
 #### 1- Create __main__.py 
-    (Linx command: touch __main__.py)
+    (Linux command: touch __main__.py)
     (Win command: echo.> __main__.py)
 Run this file by python IDLE to run the app 
 
 #### 2- Create app.py 
-    (Linx command: touch app.py)
+    (Linux command: touch app.py)
     (Win command: echo.> app.py)
 
 #### 3- Add the main code
@@ -29,7 +29,7 @@ to run the app
 
 #### 4- Config python packages
 by adding __init__.py to the files' folders
-    (Linx command: touch __init__.py)
+    (Linux command: touch __init__.py)
 * noteapp folder >> package
 * views folder >> package
     
