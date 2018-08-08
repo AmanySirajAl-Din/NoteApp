@@ -112,13 +112,13 @@
     * On the new Pop-up choose where the 'Debian ISO file'
     * Click on the 'Start' button
     * Choose install on thr VM window and follow the steps
-        *language settings
-        *Hostname
-        *Root password
-        *Guided partitioning>> 'Guided-use entire disk'
-        *partitioning scheme>> 'All files in one partition'
-        *Finish
-        *Write the changes to disk?>>Yes
+        * language settings
+        * Hostname
+        * Root password
+        * Guided partitioning>> 'Guided-use entire disk'
+        * partitioning scheme>> 'All files in one partition'
+        * Finish
+        * Write the changes to disk?>>Yes
         
     
     
