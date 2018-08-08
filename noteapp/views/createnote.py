@@ -3,7 +3,7 @@
 # http://flask.pocoo.org/docs/1.0/blueprints/
 
 from flask import Blueprint, render_template, request, redirect
-
+# import the redirect function
 import random
 
 
@@ -35,4 +35,8 @@ def show():
                 _file.write(text)
             
                 _file.close()
+                
+                return redirect('/')
+                # redirect to the index page
+                
     return render_template("createnote.html")

@@ -77,5 +77,7 @@
 #### 15- Use the fetched notes files in index page
 
 #### 16- Use the text of the fetched notes files in index page
+
+#### 17- Redirect to the index page after creating a new note
         
         
