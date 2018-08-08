@@ -8,8 +8,19 @@ import glob
 # listing files inside of directories
 
 def fetch_notes():
+    final_notes = []
     notes = glob.glob('noteapp/notes/*.note')
-    return notes
+    
+    for note in notes:
+        with open(note) as _file:
+        # open each note file
+            final_notes.append(_file.read())
+            # read the note file
+            # and append it to the final_notes list
+        _file.close()
+        # must close each file
+        
+    return final_notes
     
     
 bp = Blueprint('bp', __name__, template_folder='templates')

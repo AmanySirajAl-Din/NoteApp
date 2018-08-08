@@ -75,6 +75,7 @@
     Fetch the notes files to the index.py file
     
 #### 15- Use the fetched notes files in index page
-    
+
+#### 16- Use the text of the fetched notes files in index page
         
         
