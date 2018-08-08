@@ -34,12 +34,13 @@
     * views folder >> package
     
 #### 5- install flask package
-    * Install it on current machine
-        (command: pip install flask)
-        (command: python -m pip install --upgrade pip)
+* Install it on current machine
+            (command: pip install flask)
+            (command: python -m pip install --upgrade pip)
     
-    * Can also be installed on a virtual machine
-[Python Virtual Environments](https://realpython.com/python-virtual-environments-a-primer/)
+* Can also be installed on a virtual machine
+
+    [Source: Python Virtual Environments](https://realpython.com/python-virtual-environments-a-primer/)
 
 #### 6- Add a template with style
     
@@ -92,14 +93,19 @@
     * Search for debian netinstall
     * open the link [Debian](https://www.debian.org/CD/netinst/)     
     * Download netinst CD image that compatable with your machine
-        ( for me it's amd64 because I have 64-bit)
+        
+        (For me it's amd64 because I have 64-bit)
+        
 * **VirtualBox:**
     * Search for VirtualBox
     * open the link [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
     * **Download** the version for your OS
     * **Install** it
     * **Open** it
-    * Click on **'New'** top button 
+    
+* **VirtualBox Program Window:**
+    * Click on **'New'** top button
+    
         (or click on 'Machine' dropdown menu then click 'New')
     * Click on **'Expert Mode'** button
     * Choose **'Type'**: Linux
@@ -108,9 +114,13 @@
     * Name your virtual machine
     * Click on **'Create'** button
     * Click on **'Create'** button on the another pop-up
-        (Before clicking it .. you can make the 'File Size' 8.00GB as the tutorial)
+        
+        (Before clicking it .. you can make the 'File Size' 8.00GB as the tutorial)        
     * Click on **'Start'** top button to Boot up your newely created VM
+        
         (or click on 'Machine' dropdown menu then click 'Start')
+        
+* **VM Window:**
     * On the new Pop-up choose where the **'Debian ISO file'**
     * Click on the **'Start'** button
     * Choose **'install'** on thr VM window and follow the steps
@@ -132,11 +142,27 @@
         * Press Enter
         * Password: ****
         * Press Enter
-        * ls
+        * Type ls
     * Click **'Machine'** dropdown menu then choose 'Settings'
-    * On the Settings window choose **'Network'** tab then for **'Attached to:'** choose **'Bridged Adapter'** then click **'OK'** button
+    * On the 'Settings' window choose **'Network'** tab
+    * Then for **'Attached to:'** choose **'Bridged Adapter'**
+    * Then click **'OK'** button
+    * Click **'File'** dropdown menu then choose 'Close'
+    * On the 'Close' window choose **'Power off'** then click **'OK'** button
     
+* **VirtualBox Program Window:**
+    * Click on **'Start'** top button to Boot up your newely created VM
+    
+        (or click on 'Machine' dropdown menu then click 'Start')
         
-    
-    
+* **VM DOS:**
+    * VMname login: **root**
+    * Press Enter
+    * Password: ****
+    * Press Enter
+    * Type **"ifconfig"** (to get the IP of the VM)
+        
+        (If "ifconfig" command wasn't found then type **"ip address"** or **"ip a"**)
+
+        [Source: How to install missing ifconfig command](https://linuxconfig.org/how-to-install-missing-ifconfig-command-on-debian-linux)
         
