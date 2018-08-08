@@ -71,4 +71,7 @@
 
         _file.close()
         
+#### 14- Fetch the notes files
+    Fetch the notes files to the index.py file
+        
         
