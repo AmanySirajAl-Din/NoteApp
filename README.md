@@ -90,6 +90,6 @@
 search for debian net install
 open the link [Debian](https://www.debian.org/CD/netinst/)     
 
-** Debian ** is the operating system the Linux distribution that will be used in this part
+**Debian** is the operating system the Linux distribution that will be used in this part
         
         
