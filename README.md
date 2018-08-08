@@ -3,13 +3,13 @@
 ## Creating a web-application (Youtube tutorial)
 
 ### Youtube Links:
-[Creating a web-application in Python PART 1](https://www.youtube.com/watch?v=Dqd8ZHWErpE)
+[Creating a web-application in Python [PART 1]](https://www.youtube.com/watch?v=Dqd8ZHWErpE)
 
-[Creating a web-application in Python PART 2](https://www.youtube.com/watch?v=2Nuhh_C4FbM&t=6s)
+[Creating a web-application in Python [PART 2]](https://www.youtube.com/watch?v=2Nuhh_C4FbM&t=6s)
 
-[Creating a web-application in Python PART 3](https://www.youtube.com/watch?v=TwpUpVpknCE)
+[Creating a web-application in Python [PART 3]](https://www.youtube.com/watch?v=TwpUpVpknCE)
 
-[Creating a web-application in Python PART 4](https://www.youtube.com/watch?v=2SPjxL-66AM)
+[Creating a web-application in Python [PART 4]](https://www.youtube.com/watch?v=2SPjxL-66AM)
 
 ===================================================================
 
@@ -80,7 +80,6 @@ Fetch the notes files to the index.py file
 #### 16- Use the text of the fetched notes files in index page
 
 #### 17- Redirect to the index page after creating a new note
-        
 
      
     
