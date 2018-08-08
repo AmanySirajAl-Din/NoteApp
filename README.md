@@ -1,8 +1,8 @@
 # Note web app created with Python
 
-## Creating a web-application
-    Youtube tutorial
+## Creating a web-application (Youtube tutorial)
 
+### Youtube Links:
 [Creating a web-application in Python [PART 1]](https://www.youtube.com/watch?v=Dqd8ZHWErpE)
 
 [Creating a web-application in Python [PART 2]](https://www.youtube.com/watch?v=2Nuhh_C4FbM&t=6s)
