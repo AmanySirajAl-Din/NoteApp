@@ -32,8 +32,8 @@
     
 #### 5- install flask package
     * Install it on current machine
-        (Linx command: pip install flask)
-        (Linx command: python -m pip install --upgrade pip)
+        (command: pip install flask)
+        (command: python -m pip install --upgrade pip)
     
     * Can also be installed on a virtual machine
 [Python Virtual Environments](https://realpython.com/python-virtual-environments-a-primer/)
@@ -55,13 +55,13 @@
     in views folder createnote.py file
     @cn.route('/createnote', methods=['POST', 'GET'])
     
-#### 10- Handle the POST method
+#### 11- Handle the POST method
 
-#### 11- Return the note text
+#### 12- Return the note text
     text =  request.form.get('notetext')
     return text
     
-#### 12- Create note files
+#### 13- Create note files
     with open('noteapp/notes/{}.note'.format(random_string()), 'w+') as _file:
     # {} will be replaced with the random_string()
         _file.write(text)
