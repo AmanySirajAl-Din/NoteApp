@@ -35,6 +35,7 @@ by adding __init__.py to the files' folders
     
 #### 5- install flask package
 * Install it on current machine
+    
         (command: pip install flask)
         (command: python -m pip install --upgrade pip)
     
@@ -54,8 +55,8 @@ createnote.py
 #### 9- Add create note form
 
 #### 10- Allow the post method
-for the submit button of the form
-in views folder createnote.py file
+Allow the post method for the submit button of the form in views folder createnote.py file
+    
     @cn.route('/createnote', methods=['POST', 'GET'])
     
 #### 11- Handle the POST method
