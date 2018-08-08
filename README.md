@@ -16,12 +16,12 @@
 ### Programming Steps:
 
 #### 1- Create __main__.py 
-    (Linx command: touch __main__.py)
+    (Linux command: touch __main__.py)
     (Win command: echo.> __main__.py)
     Run this file by python IDLE to run the app 
 
 #### 2- Create app.py 
-    (Linx command: touch app.py)
+    (Linux command: touch app.py)
     (Win command: echo.> app.py)
 
 #### 3- Add the main code
@@ -29,7 +29,7 @@
 
 #### 4- Config python packages
     by adding __init__.py to the files' folders
-    (Linx command: touch __init__.py)
+    (Linux command: touch __init__.py)
     * noteapp folder >> package
     * views folder >> package
     
@@ -79,5 +79,17 @@
 #### 16- Use the text of the fetched notes files in index page
 
 #### 17- Redirect to the index page after creating a new note
+
+        
+=================================================
+
+## Part4: Using DataBase
+### Programming Steps:
+
+#### 1- Setup a virtual environment
+search for debian net install
+open the link [Debian](https://www.debian.org/CD/netinst/)     
+
+** Debian ** is the operating system the Linux distribution that will be used in this part
         
         
