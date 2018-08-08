@@ -4,9 +4,10 @@
 {% block content %}
     <h2> This is The index </h2>
     <div class="notelist">
-        {% for i in range(0, 10) %}
+        {% for note in notes %}
+        <!-- notes is the accessiable variable -->
             <div class="note">
-                <p>{{i}}- Example note</p>
+                <p>{{ note }}</p>
             </div>
         {% endfor %}
     </div>
