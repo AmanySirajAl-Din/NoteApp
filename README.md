@@ -244,18 +244,15 @@ You can follow thesteps in this [link](https://www.youtube.com/watch?v=sc-kHLUn_
     * Now you have accessed the VM
         
             root@VMname:~#_
+    * To exit the server click **ctrl+C** (^C) or type **'exit'** then press **'Enter'**
+                
     * For Debian 9 follow the steps in the this [link](https://www.globo.tech/learning-center/install-mongodb-debian-9/)
     
     * The yotube tutorial steps:
         * Now start the mongodb server:
         
                 root@VMname:~# mongo
-        * To exit the serve click ctrl+C (^C)
-        * To check if the mongodb.service is running type this command:
-                
-                systemctl status mongodb.service
-                
-        * To exit the serve click ctrl+C (^C)
+        * To exit the server click **ctrl+C** (^C) or type **'exit'** then press **'Enter'**
         * To check if the mongodb.service is running type this command:
                 
                 systemctl status mongodb.service
@@ -277,4 +274,25 @@ You can follow thesteps in this [link](https://www.youtube.com/watch?v=sc-kHLUn_
         * Now start the mongodb server:
         
                 root@VMname:~# mongo
+    
+    * To put our app on mongodb server:
+        * Exit the server click **ctrl+C** (^C) or type **'exit'** then press **'Enter'**
+        * Type these commands:
         
+        1- navigate to the folder that contains your app folder or open the Terminal from it:
+            
+                cd '%folder of your app folder PATH%'
+                cd 'F:\Amany Dolf\Studying\Python\web app'
+        2- Compress your app folder:
+                
+                tar czf noteapp.tar.gz noteapp/*
+        3- Send the compressed folder to the server and put it in a folder called 'temp':
+                
+                scp noteapp.tar.gz root@%VMHostname%:/temp
+                root@pythonvm1's password: ****
+                
+                noteapp.tar.gz                                100% 7546   320.7KB/s   00:00
+
+        4- 
+                
+                
