@@ -42,9 +42,9 @@
 
     [Source: Python Virtual Environments](https://realpython.com/python-virtual-environments-a-primer/)
 
-#### 6- Add a template with style
+#### 6- Add a tmplate with style
     
-#### 7- Create new template using Blueprint package
+#### 7- Create new tmplate using Blueprint package
     index.html
     index.py
 
@@ -192,6 +192,20 @@ You can follow thesteps in this [link](https://www.youtube.com/watch?v=sc-kHLUn_
         OR
             ip a
 
+        1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
+        link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+        inet 127.0.0.1/8 scope host lo
+           valid_lft forever preferred_lft forever
+        inet6 ::1/128 scope host
+           valid_lft forever preferred_lft forever
+        2: ens33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+        link/ether 00:0c:29:f1:c2:f2 brd ff:ff:ff:ff:ff:ff
+        inet 192.168.137.10/24 brd 192.168.137.255 scope global ens33
+           valid_lft forever preferred_lft forever
+        inet6 fe80::20c:29ff:fef1:c2f2/64 scope link
+            valid_lft forever preferred_lft forever
+        3: ens37: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+            link/ether 00:0c:29:f1:c2:fc brd ff:ff:ff:ff:ff:ff
 [Source: How to install missing ifconfig command](https://linuxconfig.org/how-to-install-missing-ifconfig-command-on-debian-linux)
         
 * Open & Edit the hosts file:    
@@ -203,11 +217,11 @@ You can follow thesteps in this [link](https://www.youtube.com/watch?v=sc-kHLUn_
 
     * Then add the IP address of the VM
     
-    10.10.2.151 &nbsp;&nbsp;&nbsp;&nbsp;   %VMHostname%
+    192.168.137.10 &nbsp;&nbsp;&nbsp;&nbsp;   %VMHostname%
     
     For me it was:
 
-    10.10.2.151 &nbsp;&nbsp;&nbsp;&nbsp;   amany.dev
+    192.168.137.10 &nbsp;&nbsp;&nbsp;&nbsp;   pythonvm
     
     For the tutorial it was:
     
@@ -248,6 +262,10 @@ You can follow thesteps in this [link](https://www.youtube.com/watch?v=sc-kHLUn_
                 
     * For Debian 9 follow the steps in the this [link](https://www.globo.tech/learning-center/install-mongodb-debian-9/)
     
+    To open nameserver path
+        
+        nano /etc/resolv.conf
+    
     * The yotube tutorial steps:
         * Now start the mongodb server:
         
@@ -281,18 +299,114 @@ You can follow thesteps in this [link](https://www.youtube.com/watch?v=sc-kHLUn_
         
         1- navigate to the folder that contains your app folder or open the Terminal from it:
             
-                cd '%folder of your app folder PATH%'
-                cd 'F:\Amany Dolf\Studying\Python\web app'
+            $ cd '%folder of your app folder PATH%'
+            $ cd 'F:\Amany Dolf\Studying\Python\web app'
         2- Compress your app folder:
                 
-                tar czf noteapp.tar.gz noteapp/*
-        3- Send the compressed folder to the server and put it in a folder called 'temp':
+            $ tar czf noteapp.tar.gz noteapp/*
+        3- Send the compressed folder to the server and put it in a folder called 'tmp':
                 
-                scp noteapp.tar.gz root@%VMHostname%:/temp
-                root@pythonvm1's password: ****
-                
-                noteapp.tar.gz                                100% 7546   320.7KB/s   00:00
+            $ scp noteapp.tar.gz root@%VMHostname%:/tmp
+            root@pythonvm1's password: ****
 
-        4- 
+            noteapp.tar.gz                                100% 7546   320.7KB/s   00:00
+
+        4- Move the compressed folder to the VM folder:
                 
+            # cd /home/
+            # ls
+            pythonvm
+            # cd pythonvm/
+            # ls
+            # mv /tmp/noteapp.tar.gz .
+            # mv --help
+            Usage: mv [OPTION]... [-T] SOURCE DEST
+            # ls
+            noteapp.tar.gz
+        4- Create app folder in the VM folder and Move the compressed folder to it:
+                
+            # mkdir app
+            # ls
+            app  noteapp.tar.gz
+            # mv noteapp.tar.gz app/.
+            # ls
+            app
+            # cd app/
+            # ls
+            noteapp.tar.gz
+        5- Extract the compressed noteapp folder:
+                
+            # tar xzf noteapp.tar.gz
+            # ls
+            noteapp  noteapp.tar.gz
+        6-  Remove the noteapp.tar.gz:
+                
+           # rm  noteapp.tar.gz
+           # ls
+           noteapp
+        7- Navigate to the noteapp folder:
+                
+            # cd noteapp
+            # ls
+            __main__.py  noteapp  README.md
+        
+        Now we have the code in the VM
+        8- Install python-virtualenv to run the python code:
+            
+            # apt-get install python-virtualenv
+        8- Create new python-virtualenv with the python virsion you are using:
+            
+            # virtualenv -p /usr/bin/python3.5 ./venv
+        9- Source virtualenv:
+        
+            # source ./venv/bin/activate
+            # ls
+            __main__.py  noteapp  README.md  venv
+            (venv) root@pythonvm:/home/pythonvm/app/noteapp# python __main__.py        
+        
+        * The source command can be used to load any functions file into the current shell script or a command prompt.
+        * It read and execute commands from given FILENAME and return.
+        * The pathnames in $PATH are used to find the directory containing FILENAME. If any ARGUMENTS are supplied, they become the positional parameters when FILENAME is executed.
+        
+        10- Run the noteapp app:
+            
+            # python __main__.py
+            ImportError: No module named 'flask'
+            # pip install flask
+            # python __main__.py
+             * Serving Flask app "noteapp.app" (lazy loading)
+             * Environment: production
+               WARNING: Do not use the development server in a production environment.
+               Use a production WSGI server instead.
+             * Debug mode: on
+             * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+             * Restarting with stat
+             * Debugger is active!
+             * Debugger PIN: 165-886-297
+
+        The app won't run on 127.0.0.1:5000, so you need to do the following steps:
+        
+            ^C
+            # ip a
+        Get the IP address>> '192.168.137.10':
+            
+            # nano __main__.py
+        Change 'app.run(debug=True)' to:
+            
+            app.run(debug=True, host='192.168.137.10')
+        Now Try to run the app again:
+            
+            # python __main__.py
+             * Serving Flask app "noteapp.app" (lazy loading)
+             * Environment: production
+               WARNING: Do not use the development server in a production environment.
+               Use a production WSGI server instead.
+             * Debug mode: on
+             * Running on http://192.168.137.10:5000/ (Press CTRL+C to quit)
+             * Restarting with stat
+             * Debugger is active!
+             * Debugger PIN: 165-886-297
+
+            
+
                 
